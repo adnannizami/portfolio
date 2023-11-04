@@ -23,23 +23,14 @@
 }
 
 .socials-navbar {
-  position: absolute;
-  right: 20px;
-  top: 40px;
-  z-index: 1;
+  float: right;
+  margin-top: 10px;
+  width: fit-content;
 }
 
 .socials-navbar a {
   margin: 1.6rem;
   font-size: 1.8rem;
-}
-
-.socials-navbar a .svg-inline--fa {
-  transform: translateY(30px);
-}
-
-.socials-navbar svg {
-  transition: top ease 0.5s;
 }
 
 .intro {
@@ -531,5 +522,135 @@
 @media only screen and (max-width: 244px) {
   .skills-button {
     border-right: solid 1px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* Iphones */
+
+/* 14 */
+@media only screen and (width: 390px) and (height: 844px) {
+  .intro-container {
+    padding-top: 20.5vh;
+  }
+
+  .projects-button {
+    border-right: solid 1px rgba(0, 0, 0, 0.12);
+  }
+
+  .projects {
+    height: 274%;
+  }
+
+  .skills {
+    height: 130%;
+  }
+
+  .about {
+    height: 105%;
+  }
+
+  .contact {
+    height: 30%;
+  }
+
+  .outer-container {
+    background-color: red;
+  }
+}
+
+/* 14 Pro */
+@media only screen and (width: 393px) and (height: 852px) {
+  .intro-container {
+    padding-top: 20.5vh;
+  }
+
+  .projects-button {
+    border-right: solid 1px rgba(0, 0, 0, 0.12);
+  }
+
+  .projects {
+    height: 260%;
+  }
+
+  .skills {
+    height: 130%;
+  }
+
+  .about {
+    height: 100%;
+  }
+
+  .contact {
+    height: 30%;
+  }
+}
+
+/* 14 Plus */
+@media only screen and (width: 428px) and (height: 926px) {
+  .intro-container {
+    padding-top: 26.5vh;
+  }
+
+  .about-button {
+    border-right: solid 1px rgba(0, 0, 0, 0.12);
+  }
+
+  .projects {
+    height: 230%;
+  }
+
+  .about {
+    height: 100%;
+  }
+
+  .skills-container {
+    width: 65%;
+  }
+
+  .skills {
+    height: 120%;
+  }
+
+  .about-container {
+    width: 80%;
+  }
+
+  .contact {
+    height: 30%;
+  }
+}
+
+/* 14 Pro Max */
+@media only screen and (width: 430px) and (height: 932px) {
+  .intro-container {
+    padding-top: 26.5vh;
+  }
+
+  .about-button {
+    border-right: solid 1px rgba(0, 0, 0, 0.12);
+  }
+
+  .projects {
+    height: 230%;
+  }
+
+  .about {
+    height: 100%;
+  }
+
+  .skills-container {
+    width: 65%;
+  }
+
+  .skills {
+    height: 120%;
+  }
+
+  .about-container {
+    width: 80%;
+  }
+
+  .contact {
+    height: 30%;
   }
 }
