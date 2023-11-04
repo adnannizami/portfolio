@@ -216,7 +216,7 @@
 }
 
 .project-container:nth-child(3) {
-  padding-bottom: 130px;
+  padding-bottom: 210px;
   border-bottom: none;
 }
 
@@ -367,8 +367,8 @@
   text-align: left;
   color: white;
   margin-left: 50px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   font-size: 20px;
 }
 
