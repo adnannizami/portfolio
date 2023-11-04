@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #0f1b61;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("src/assets/fonts/GoogleSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("src/assets/fonts/GoogleSans-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("src/assets/fonts/GoogleSans-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("src/assets/fonts/GoogleSans-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("src/assets/fonts/GoogleSans-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("src/assets/fonts/GoogleSans-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  font-family: "Google Sans";
+}
+
+.socials-navbar a:hover .svg-inline--fa {
+  transform: translateY(-3px);
+}
+
+.socials-navbar .svg-inline--fa {
+  transition: transform 0.5s;
+  color: #0f1b61;
+}
+
+.menu-container .mdc-button__label {
+  transition: all 0.6s ease-out;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: contents;
+}
+
+.menu-container .mdc-button:hover .mdc-button__label {
+  color: white;
+}
