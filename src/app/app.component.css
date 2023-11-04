@@ -116,11 +116,11 @@
 }
 
 .projects {
-  height: 150%;
+  height: fit-content;
 }
 
 .about {
-  height: 65%;
+  height: fit-content;
 }
 
 .contact {
@@ -209,10 +209,15 @@
 }
 
 .project-container {
-  height: 300px;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #0f1b61;
+}
+
+.project-container:nth-child(3) {
+  padding-bottom: 130px;
+  border-bottom: none;
 }
 
 .project-content-container {
@@ -349,9 +354,9 @@
 }
 
 .about-container {
-  margin-top: 60px;
   width: 50%;
   display: flex;
+  align-items: center;
   flex-direction: row;
   margin-left: auto;
   margin-right: auto;
@@ -362,6 +367,8 @@
   text-align: left;
   color: white;
   margin-left: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 20px;
 }
 
@@ -412,13 +419,21 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .intro-container {
+    padding-top: 27.5vh;
+  }
+
+  .about-button {
+    border-right: solid 1px rgba(0, 0, 0, 0.12);
+  }
+
   .skills-content-container {
     flex-direction: column;
     row-gap: 60px;
   }
 
   .skills {
-    height: 125%;
+    height: 120%;
   }
 
   .skill-content {
@@ -430,7 +445,7 @@
   .skills-container {
     margin-left: auto;
     margin-right: auto;
-    width: 45%;
+    width: 65%;
   }
 
   .image {
@@ -441,17 +456,14 @@
     text-align: center;
   }
 
-  .project-container {
-    height: fit-content;
-  }
-
   .projects {
-    height: 230%;
+    height: 190%;
   }
 
   .about-container {
     flex-direction: column;
     margin-top: 30px;
+    width: 80%;
   }
 
   .about-image {
@@ -465,192 +477,42 @@
   }
 
   .about {
-    height: 120%;
+    height: 90%;
   }
 }
 
-@media only screen and (max-width: 454px) {
-  .about-button {
-    border-right: solid 1px rgba(0, 0, 0, 0.12);
-  }
-
-  .projects {
-    height: 255%;
-  }
-
-  .about {
-    height: 100%;
-  }
-
-  .skills-container {
-    width: 65%;
+@media only screen and (max-width: 435px) {
+  .intro-container {
+    padding-top: 18.5vh;
   }
 
   .skills {
+    height: 150%;
+  }
+
+  .projects {
+    height: 300%;
+  }
+
+  .about {
     height: 130%;
   }
-
-  .about-container {
-    width: 80%;
-  }
 }
 
-@media only screen and (max-width: 376px) {
-  .projects-button {
-    border-right: solid 1px rgba(0, 0, 0, 0.12);
-  }
-
-  .projects {
-    height: 290%;
-  }
-
-  .skills {
-    height: 130%;
-  }
-
-  .about {
-    height: 120%;
-  }
-}
-
-@media only screen and (max-width: 349px) {
-  .projects-button {
-    border-right: solid 1px rgba(0, 0, 0, 0.12);
-  }
-}
-
-@media only screen and (max-width: 244px) {
-  .skills-button {
-    border-right: solid 1px rgba(0, 0, 0, 0.12);
-  }
-}
-
-/* Iphones */
-
-/* 14 */
-@media only screen and (width: 390px) and (height: 844px) {
+@media only screen and (max-width: 420px) {
   .intro-container {
-    padding-top: 20.5vh;
-  }
-
-  .projects-button {
-    border-right: solid 1px rgba(0, 0, 0, 0.12);
-  }
-
-  .projects {
-    height: 274%;
+    padding-top: 16.5vh;
   }
 
   .skills {
-    height: 130%;
-  }
-
-  .about {
-    height: 105%;
-  }
-
-  .contact {
-    height: 30%;
-  }
-
-  .outer-container {
-    background-color: red;
-  }
-}
-
-/* 14 Pro */
-@media only screen and (width: 393px) and (height: 852px) {
-  .intro-container {
-    padding-top: 20.5vh;
-  }
-
-  .projects-button {
-    border-right: solid 1px rgba(0, 0, 0, 0.12);
+    height: 180%;
   }
 
   .projects {
-    height: 260%;
-  }
-
-  .skills {
-    height: 130%;
+    height: 330%;
   }
 
   .about {
-    height: 100%;
-  }
-
-  .contact {
-    height: 30%;
-  }
-}
-
-/* 14 Plus */
-@media only screen and (width: 428px) and (height: 926px) {
-  .intro-container {
-    padding-top: 26.5vh;
-  }
-
-  .about-button {
-    border-right: solid 1px rgba(0, 0, 0, 0.12);
-  }
-
-  .projects {
-    height: 230%;
-  }
-
-  .about {
-    height: 100%;
-  }
-
-  .skills-container {
-    width: 65%;
-  }
-
-  .skills {
-    height: 120%;
-  }
-
-  .about-container {
-    width: 80%;
-  }
-
-  .contact {
-    height: 30%;
-  }
-}
-
-/* 14 Pro Max */
-@media only screen and (width: 430px) and (height: 932px) {
-  .intro-container {
-    padding-top: 26.5vh;
-  }
-
-  .about-button {
-    border-right: solid 1px rgba(0, 0, 0, 0.12);
-  }
-
-  .projects {
-    height: 230%;
-  }
-
-  .about {
-    height: 100%;
-  }
-
-  .skills-container {
-    width: 65%;
-  }
-
-  .skills {
-    height: 120%;
-  }
-
-  .about-container {
-    width: 80%;
-  }
-
-  .contact {
-    height: 30%;
+    height: 160%;
   }
 }
